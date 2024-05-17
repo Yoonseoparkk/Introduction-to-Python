@@ -1,0 +1,89 @@
+워크스페이스
+프로젝트01
+프로젝트02
+프로젝트03
+
+설치 파이썬 아나콘다 에디터 설치
+
+ide 통합개발환경
+
+(구글검색)
+vscode cheat sheet 치트시트 컨닝페이퍼 요약정리 마법단어
+패키지 pandas cheat sheet
+pandas docu 공식문서
+눈으로 보는게 제일 좋다 --> 구글 이미지 검색
+
+(단축키)
+ctrl + , : setting
+ctrl + shift + P : vs가 가진 기능 검색 (show command palette)
+ctrl + P : 파일 열기
+ctrl + J : 터미널
+ctrl + shift + X : extension
+ctrl + / : 주석 처리
+alt + shift + F : 코드 문장 정리 (formatting)
+alt + shift + down : 한 줄 복사
+
+버전확인
+python --version
+python -v
+
+path 운영체제가 가지고 있는 환경변수 path 등록
+
+경로문자열
+
+경로 구분문자열
+Window \
+Linux MacOS /       pathlib
+.. 바로 위 상위로 이동
+. 현재 디렉토리
+~ user home
+/ 루트경로 최상단
+
+출력문 함수 print --> 가장 대표적인 내장함수
+print("안녕하세요")
+
+파이썬 확장자 py
+주피터노트북 ipynb
+
+선언식 키워드 --> def
+def 함수명():
+    실행문장
+
+표현식 --> 종결문자 없음
+키워드 --> 예약어
+파이썬은 대소문자를 구분한다 --> False != false
+
+시퀀스 --> 이터러블객체
+import keyword  # 파이썬이 가지고 있는 것을 가져온다
+
+print(keyword.kwlist, "안녕하세요", "12345", end=" ")
+print("다음줄", end=" **************\n")
+
+1. 파이썬의 내장 함수 (Built-in function)
+--> 미리 만들어져 있음. 갯수가 명확
+type(), len(), dir()
+
+2. 사용자 함수
+def pt(a):
+    print(type(a))
+
+
+1. 기본자료형
+2. 참조자료형 --> 기본자료형을 참조
+
+
+---------------------------------------
+
+공유폴더
+
+http://gofile.me/67ISC/hFHnsTvhG
+
+혼자공부하는파이썬
+한빛미디어자료실
+예제소스다운로드
+
+생 파이썬 설치
+아나콘다 설치 --> 아나콘다 : 종합 패키지. 용량 큼
+미니콘다 --> 압축적인 버전
+
+IDE vscode curser
