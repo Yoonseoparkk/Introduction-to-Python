@@ -113,13 +113,22 @@
 
 #   -----------------------------------
 
-s = str(input())
-croatia = ["c-", "dz=", "d-", "lj", "nj", "s=", "z="]
-count = 0
-for c in croatia:  # 크로아티아 알파벳 갯수만 세기
-    if c in s:
-        count += 1
-        s = s.replace(c, "")  # 이미 카운트한 알파벳 제거
-for si in s:  # 나머지 알파벳 갯수 세기
-    count += 1
-print(count)
+# 1
+# s = str(input())
+# croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
+# count = 0
+# for c in croatia:  # 크로아티아 알파벳 갯수만 세기
+#     if c in s:
+#         count += 1
+#         s = s.replace(c, "")  # 이미 카운트한 알파벳 제거
+# for si in s:  # 나머지 알파벳 갯수 세기
+#     count += 1
+# print(count)
+
+# 2
+# s = str(input())
+# croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
+# for c in croatia:  # 크로아티아 알파벳 갯수만 세기
+#     if c in s:
+#         s = s.replace(c, "*")  # 카운트한 알파벳 대체
+# print(len(s))
