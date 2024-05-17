@@ -85,12 +85,11 @@
 
 #   -----------------------------------
 
-n = int(input())
-for i in range(1, n + 1):
-    print(" " * (n - i), "*" * (2 * i - 1))
-for i in range(n + 1, 0, -1):
-    print(" " * (), "*" * (n - i))
-
+# n = int(input())
+# for i in range(1, n):
+#     print(" " * (n - i) + "*" * (2 * i - 1))
+# for i in range(n, 0, -1):
+#     print(" " * (n - i) + "*" * (2 * i - 1))
 
 # n = 5
 #     *     " " 4 i=1 1
@@ -102,3 +101,25 @@ for i in range(n + 1, 0, -1):
 #   *****   " " 2 i=2 5
 #    ***    " " 3 i=3 3
 #     *     " " 4 i=4 1
+
+#   -----------------------------------
+
+# word = list(str(input()))
+
+# if word == word[::-1]:
+#     print(1)
+# else:
+#     print(0)
+
+#   -----------------------------------
+
+s = str(input())
+croatia = ["c-", "dz=", "d-", "lj", "nj", "s=", "z="]
+count = 0
+for c in croatia:  # 크로아티아 알파벳 갯수만 세기
+    if c in s:
+        count += 1
+        s = s.replace(c, "")  # 이미 카운트한 알파벳 제거
+for si in s:  # 나머지 알파벳 갯수 세기
+    count += 1
+print(count)
