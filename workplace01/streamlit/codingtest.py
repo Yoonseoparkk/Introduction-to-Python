@@ -132,3 +132,28 @@
 #     if c in s:
 #         s = s.replace(c, "*")  # 카운트한 알파벳 대체
 # print(len(s))
+
+
+#   -----------------------------------
+
+n = int(input())
+save = ""
+count = 0
+# aabbc
+for i in range(n):
+    s = str(input())
+    history = []
+    for letter in s:
+        if letter != save:
+            if letter not in history:  # 새로 등장한 단어라면
+                history.append(letter)  # 히스토리에 추가 history = ['a', 'b', 'c']
+                if letter == s[-1]:
+                    count += 1
+            else:  # 이미 등장했던 단어라면
+                break
+            save = letter  # 비교를 위한 save에 letter 임시 저장 save = c
+        else:  # letter == save
+            if letter == s[-1]:
+                count += 1
+
+print(count)
